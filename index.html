@@ -46,30 +46,12 @@
       transition: background 0.3s;
     }
 
-    .projects-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 30px;
-    }
-
-    @media (min-width: 700px) {
-      .projects-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-    }
-
     .project {
-      background-color: var(--card-bg);
-      border-radius: 10px;
+      margin-bottom: 40px;
       padding: 20px;
+      border-radius: 8px;
+      background-color: var(--card-bg);
       box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-      transition: background 0.3s;
-    }
-
-    .project img {
-      width: 100%;
-      border-radius: 6px;
-      margin: 15px 0;
     }
 
     ul {
@@ -90,7 +72,18 @@
       cursor: pointer;
     }
 
-    .contact-form input, .contact-form textarea {
+    .download-btn {
+      margin-top: 10px;
+      background-color: #444;
+      color: #fff;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
       width: 100%;
       padding: 10px;
       margin: 10px 0 20px;
@@ -103,16 +96,6 @@
       background-color: #0077cc;
       color: white;
       border: none;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-
-    .download-btn {
-      margin-top: 10px;
-      background-color: #444;
-      color: #fff;
-      border: none;
-      padding: 8px 14px;
       border-radius: 6px;
       cursor: pointer;
     }
@@ -139,49 +122,43 @@
 
   <div class="section">
     <h2>Projects</h2>
-    <div class="projects-grid">
 
-      <!-- Credit Card Transaction -->
-      <div class="project">
-        <h3>💳 Credit Card Transaction Analysis</h3>
-        <p><strong>Tools:</strong> SQL, Power BI</p>
-        <ul>
-          <li>💰 Total revenue: ₹55M+</li>
-          <li>🟦 Blue Card holders: ₹46M</li>
-          <li>🎓 Graduates contributed ₹22M</li>
-        </ul>
-        <p><strong>Business Value:</strong> Targeted high-value customers and demographics.</p>
-        <p><a href="https://github.com/sahil-dangi/credit-card-data-analysis" target="_blank">🔗 GitHub Link</a></p>
-        <img src="credit-card-dashboard.png" alt="Credit Card Dashboard" />
-      </div>
-
-      <!-- Marketing Analytics -->
-      <div class="project">
-        <h3>🛍️ Marketing Analytics – ShopEasy</h3>
-        <p><strong>Tools:</strong> SQL, Python, Power BI</p>
-        <ul>
-          <li>📈 Jan conversion: 18.5%</li>
-          <li>📉 Avg. rating: 3.7</li>
-          <li>🔍 Sentiment: 275 Positive / 82 Negative</li>
-        </ul>
-        <p><strong>Business Value:</strong> Reduced ad waste & improved campaign focus.</p>
-        <p><a href="https://github.com/sahil-dangi/marketing-analytics-dashboard" target="_blank">🔗 GitHub Link</a></p>
-      </div>
-
-      <!-- Diwali Sales -->
-      <div class="project">
-        <h3>🎉 Diwali Sales Analysis</h3>
-        <p><strong>Tools:</strong> Python (Pandas, Seaborn), Jupyter</p>
-        <ul>
-          <li>📊 Top buyers: Age 26–35</li>
-          <li>🧑‍🤝‍🧑 Unmarried males spent more</li>
-          <li>🏙️ Focused on mid-tier cities</li>
-        </ul>
-        <p><strong>Business Value:</strong> Data-backed festive promotions.</p>
-        <p><a href="https://github.com/sahil-dangi/diwali-sales-analysis" target="_blank">🔗 GitHub Link</a></p>
-      </div>
-
+    <div class="project">
+      <h3>Project 1: 💳 Credit Card Transaction Analysis</h3>
+      <p><strong>Tools:</strong> SQL, Power BI</p>
+      <ul>
+        <li>💰 Total revenue: ₹55M+</li>
+        <li>🟦 Blue Card holders: ₹46M</li>
+        <li>🎓 Graduates contributed ₹22M</li>
+      </ul>
+      <p><strong>Business Value:</strong> Helped identify and target high-value customers.</p>
+      <p><a href="https://github.com/sahil-dangi/credit-card-data-analysis" target="_blank">🔗 GitHub Link</a></p>
     </div>
+
+    <div class="project">
+      <h3>Project 2: 🛍️ Marketing Analytics – ShopEasy</h3>
+      <p><strong>Tools:</strong> SQL, Python, Power BI</p>
+      <ul>
+        <li>📈 Best conversion: January (18.5%)</li>
+        <li>📉 Avg. rating: 3.7</li>
+        <li>🔍 Sentiment: 275 Positive / 82 Negative</li>
+      </ul>
+      <p><strong>Business Value:</strong> Improved campaign targeting and reduced ad waste.</p>
+      <p><a href="https://github.com/sahil-dangi/marketing-analytics-dashboard" target="_blank">🔗 GitHub Link</a></p>
+    </div>
+
+    <div class="project">
+      <h3>Project 3: 🎉 Diwali Sales Analysis</h3>
+      <p><strong>Tools:</strong> Python (Pandas, Seaborn), Jupyter Notebook</p>
+      <ul>
+        <li>📊 Top customers: Age 26–35</li>
+        <li>🧑‍🤝‍🧑 Unmarried males spent more</li>
+        <li>🏙️ Focused investment on mid-tier cities</li>
+      </ul>
+      <p><strong>Business Value:</strong> Boosted festive ROI through data-backed strategy.</p>
+      <p><a href="https://github.com/sahil-dangi/diwali-sales-analysis" target="_blank">🔗 GitHub Link</a></p>
+    </div>
+
   </div>
 
   <div class="section">
@@ -212,7 +189,7 @@
 
   <div class="section">
     <h2>Contact Me</h2>
-    <form class="contact-form">
+    <form class="contact-form" id="contactForm">
       <input type="text" name="name" placeholder="Your Name" required />
       <input type="email" name="email" placeholder="Your Email" required />
       <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
@@ -225,9 +202,15 @@
       document.body.classList.toggle("dark");
     }
 
-    document.querySelector(".contact-form").addEventListener("submit", function(e) {
-      e.preventDefault();
-      alert("Thanks! Your message has been sent.");
+    document.addEventListener("DOMContentLoaded", function () {
+      const form = document.getElementById("contactForm");
+      if (form) {
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          alert("Thanks! Your message has been sent.");
+          form.reset();
+        });
+      }
     });
   </script>
 
