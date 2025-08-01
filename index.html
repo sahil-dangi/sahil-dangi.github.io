@@ -14,16 +14,13 @@
       padding: 30px;
       line-height: 1.6;
     }
-
     h1, h2, h3, h4 {
       color: #222;
     }
-
     a {
       color: #0077cc;
       text-decoration: none;
     }
-
     .section {
       background-color: #fff;
       padding: 25px;
@@ -31,19 +28,32 @@
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0,0,0,0.05);
     }
-
     ul {
       padding-left: 20px;
     }
-
     li {
       margin-bottom: 8px;
     }
-
-    .project {
-      margin-bottom: 40px;
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
     }
-
+    button {
+      padding: 10px 20px;
+      background-color: #0077cc;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    button:hover {
+      background-color: #005fa3;
+    }
     @media (max-width: 600px) {
       body {
         padding: 15px;
@@ -67,98 +77,57 @@
     <p>BCA graduate and aspiring data analyst with hands-on experience in SQL, Power BI, Excel, and Python. Skilled in data transformation, visualization, and actionable insight generation. I enjoy solving business problems with clean, structured, and visual data storytelling.</p>
   </div>
 
+  <!-- Projects Section -->
   <div class="section">
     <h2>Projects</h2>
 
+    <!-- Project 1 -->
     <div class="project">
-      <h3>📊 Project 1: Credit Card Transaction Analysis (Power BI & SQL)</h3>
-
-      <h4>🧩 Business Problem</h4>
-      <p>The business lacked insight into which customers and card types were generating the most revenue.</p>
-
-      <h4>🛠 Tools Used</h4>
-      <ul>
-        <li>SQL – data cleaning, joins, filtering</li>
-        <li>Power BI – dashboard, DAX, KPI visuals</li>
-        <li>CSV – customer and transaction data</li>
-      </ul>
-
-      <h4>📊 Key Insights</h4>
+      <h3>Project 1: 💳 Credit Card Transaction Analysis (SQL + Power BI)</h3>
+      <p><strong>Business Problem:</strong> The business lacked insights into revenue by card type and customer segments.</p>
+      <p><strong>Tools:</strong> SQL, Power BI, CSV</p>
+      <p><strong>Key Insights:</strong></p>
       <ul>
         <li>Total revenue: ₹55M+</li>
         <li>Blue Card holders generated ₹46M</li>
-        <li>Customers aged 60+ contributed ₹14M</li>
-        <li>Swipe method: ₹35M in revenue</li>
-        <li>Graduates: ₹22M segment</li>
+        <li>Age 60+ group: ₹14M</li>
+        <li>Graduates contributed ₹22M</li>
       </ul>
-
-      <h4>🎯 Actions Taken</h4>
-      <p>Created dashboard and prepared data in SQL for segmentation and analysis.</p>
-
-      <h4>💡 Business Value</h4>
-      <p>Enabled the business to personalize offerings based on customer value and behavior.</p>
-
-      <p><a href="https://github.com/sahil-dangi/credit-card-data-analysis" target="_blank">🔗 View Project on GitHub</a></p>
+      <p><strong>Outcome:</strong> Identified high-value segments and enabled targeted marketing strategies using dashboards.</p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/sahil-dangi/credit-card-data-analysis" target="_blank">View Project</a></p>
     </div>
 
-    <div class="project">
-      <h3>📈 Project 2: Marketing Analytics Dashboard – ShopEasy</h3>
-
-      <h4>🧩 Business Problem</h4>
-      <p>Falling conversion rates and unclear customer sentiment despite high campaign spending.</p>
-
-      <h4>🛠 Tools Used</h4>
+    <!-- Project 2 -->
+    <div class="project" style="margin-top: 40px;">
+      <h3>Project 2: 🛍️ Marketing Analytics Dashboard – ShopEasy</h3>
+      <p><strong>Business Problem:</strong> Declining engagement and unclear customer sentiment across campaigns.</p>
+      <p><strong>Tools:</strong> SQL, Python (VADER), Power BI</p>
+      <p><strong>Key Insights:</strong></p>
       <ul>
-        <li>SQL – data modeling, joins, cleaning</li>
-        <li>Python – sentiment analysis with VADER</li>
-        <li>Power BI – visualization and KPIs</li>
+        <li>Top conversions: January (18.5%)</li>
+        <li>Average review score: 3.7</li>
+        <li>Sentiment analysis: 275 positive, 82 negative</li>
       </ul>
-
-      <h4>📊 Key Insights</h4>
-      <ul>
-        <li>Best conversion: January (18.5%)</li>
-        <li>Avg. review rating: 3.7</li>
-        <li>Sentiment: 275 positive, 82 negative</li>
-      </ul>
-
-      <h4>🎯 Actions Taken</h4>
-      <p>Recommended content strategy changes and budget reallocation based on insights.</p>
-
-      <h4>💡 Business Value</h4>
-      <p>Improved ad targeting and reduced wasted spend on low-performing campaigns.</p>
-
-      <p><a href="https://github.com/sahil-dangi/marketing-analytics-dashboard" target="_blank">🔗 View Project on GitHub</a></p>
+      <p><strong>Outcome:</strong> Suggested new campaign timings and product-focused strategies to reduce ad spend waste.</p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/sahil-dangi/marketing-analytics-dashboard" target="_blank">View Project</a></p>
     </div>
 
-    <div class="project">
-      <h3>🎉 Project 3: Diwali Sales Analysis (Python)</h3>
-
-      <h4>🧩 Business Problem</h4>
-      <p>Need to understand regional demand and improve Diwali marketing strategy.</p>
-
-      <h4>🛠 Tools Used</h4>
+    <!-- Project 3 -->
+    <div class="project" style="margin-top: 40px;">
+      <h3>Project 3: 🎉 Diwali Sales Analysis (Python)</h3>
+      <p><strong>Business Problem:</strong> Needed to identify profitable customer segments for festive season targeting.</p>
+      <p><strong>Tools:</strong> Python (Pandas, Seaborn, Matplotlib), Jupyter Notebook</p>
+      <p><strong>Key Insights:</strong></p>
       <ul>
-        <li>Python – Pandas, Seaborn, Matplotlib</li>
-        <li>Jupyter Notebook – EDA and visualization</li>
+        <li>Most spending: Age group 26–35</li>
+        <li>Male customers spent more than females</li>
+        <li>Top cities and product categories identified</li>
       </ul>
-
-      <h4>📊 Key Insights</h4>
-      <ul>
-        <li>Top customers: Age 26–35, unmarried</li>
-        <li>Male customers spent more</li>
-        <li>Identified high-potential regions</li>
-      </ul>
-
-      <h4>🎯 Actions Taken</h4>
-      <p>Suggested combo deals and female-focused promotions for upcoming campaigns.</p>
-
-      <h4>💡 Business Value</h4>
-      <p>Better targeting and improved campaign ROI during festive periods.</p>
-
-      <p><a href="https://github.com/sahil-dangi/diwali-sales-analysis" target="_blank">🔗 View Project on GitHub</a></p>
+      <p><strong>Outcome:</strong> Recommended targeting strategies for high-value cities and customer types.</p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/sahil-dangi/diwali-sales-analysis" target="_blank">View Project</a></p>
     </div>
-
   </div>
+  <!-- End Projects -->
 
   <div class="section">
     <h2>Education</h2>
@@ -184,6 +153,29 @@
       <li>Quick Learning & Adaptability</li>
       <li>Team Collaboration & Communication</li>
     </ul>
+  </div>
+
+  <!-- Contact Form -->
+  <div class="section">
+    <h2>Send a Message</h2>
+    <form action="https://formspree.io/f/xldllvvv" method="POST">
+      <label>
+        Your Name:<br>
+        <input type="text" name="name" required>
+      </label><br><br>
+
+      <label>
+        Your Email:<br>
+        <input type="email" name="email" required>
+      </label><br><br>
+
+      <label>
+        Your Message:<br>
+        <textarea name="message" rows="5" required></textarea>
+      </label><br><br>
+
+      <button type="submit">Send Message</button>
+    </form>
   </div>
 
 </body>
