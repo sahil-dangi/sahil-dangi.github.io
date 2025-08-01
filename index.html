@@ -28,6 +28,9 @@
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0,0,0,0.05);
     }
+    .project {
+      margin-bottom: 40px;
+    }
     ul {
       padding-left: 20px;
     }
@@ -36,20 +39,20 @@
     }
     input, textarea {
       width: 100%;
-      padding: 10px;
+      padding: 8px;
       margin-top: 5px;
-      font-size: 1rem;
+      margin-bottom: 15px;
       border: 1px solid #ccc;
       border-radius: 4px;
+      box-sizing: border-box;
     }
     button {
-      padding: 10px 20px;
       background-color: #0077cc;
-      color: #fff;
+      color: white;
+      padding: 10px 16px;
       border: none;
       border-radius: 4px;
       cursor: pointer;
-      font-size: 1rem;
     }
     button:hover {
       background-color: #005fa3;
@@ -77,57 +80,46 @@
     <p>BCA graduate and aspiring data analyst with hands-on experience in SQL, Power BI, Excel, and Python. Skilled in data transformation, visualization, and actionable insight generation. I enjoy solving business problems with clean, structured, and visual data storytelling.</p>
   </div>
 
-  <!-- Projects Section -->
   <div class="section">
     <h2>Projects</h2>
 
-    <!-- Project 1 -->
     <div class="project">
-      <h3>Project 1: 💳 Credit Card Transaction Analysis (SQL + Power BI)</h3>
-      <p><strong>Business Problem:</strong> The business lacked insights into revenue by card type and customer segments.</p>
+      <h3>Project 1 – 💳 Credit Card Transaction Analysis (Power BI + SQL)</h3>
+      <p><strong>Business Problem:</strong> No insights on which card types or customers drive revenue.</p>
       <p><strong>Tools:</strong> SQL, Power BI, CSV</p>
-      <p><strong>Key Insights:</strong></p>
       <ul>
-        <li>Total revenue: ₹55M+</li>
-        <li>Blue Card holders generated ₹46M</li>
-        <li>Age 60+ group: ₹14M</li>
-        <li>Graduates contributed ₹22M</li>
+        <li>💰 Revenue: ₹55M+ (₹46M from Blue Card holders)</li>
+        <li>👴 Customers 60+ generated ₹14M</li>
+        <li>🎓 Graduates brought in ₹22M</li>
       </ul>
-      <p><strong>Outcome:</strong> Identified high-value segments and enabled targeted marketing strategies using dashboards.</p>
-      <p><strong>GitHub:</strong> <a href="https://github.com/sahil-dangi/credit-card-data-analysis" target="_blank">View Project</a></p>
+      <p><strong>Value:</strong> Targeted high-value users via dashboards and segmentation logic.</p>
+      <p><a href="https://github.com/sahil-dangi/credit-card-data-analysis" target="_blank">🔗 View on GitHub</a></p>
     </div>
 
-    <!-- Project 2 -->
-    <div class="project" style="margin-top: 40px;">
-      <h3>Project 2: 🛍️ Marketing Analytics Dashboard – ShopEasy</h3>
-      <p><strong>Business Problem:</strong> Declining engagement and unclear customer sentiment across campaigns.</p>
-      <p><strong>Tools:</strong> SQL, Python (VADER), Power BI</p>
-      <p><strong>Key Insights:</strong></p>
+    <div class="project">
+      <h3>Project 2 – 🛍️ Marketing Analytics Dashboard – ShopEasy</h3>
+      <p><strong>Business Problem:</strong> Low conversions, unclear campaign ROI.</p>
+      <p><strong>Tools:</strong> Power BI, Python (VADER), SQL</p>
       <ul>
-        <li>Top conversions: January (18.5%)</li>
-        <li>Average review score: 3.7</li>
-        <li>Sentiment analysis: 275 positive, 82 negative</li>
+        <li>📈 January conversion: 18.5%</li>
+        <li>🔍 Avg review: 3.7 stars | Sentiment: 275 👍, 82 👎</li>
       </ul>
-      <p><strong>Outcome:</strong> Suggested new campaign timings and product-focused strategies to reduce ad spend waste.</p>
-      <p><strong>GitHub:</strong> <a href="https://github.com/sahil-dangi/marketing-analytics-dashboard" target="_blank">View Project</a></p>
+      <p><strong>Value:</strong> Reduced ad spend waste, improved targeting using sentiment + trend analysis.</p>
+      <p><a href="https://github.com/sahil-dangi/marketing-analytics-dashboard" target="_blank">🔗 View on GitHub</a></p>
     </div>
 
-    <!-- Project 3 -->
-    <div class="project" style="margin-top: 40px;">
-      <h3>Project 3: 🎉 Diwali Sales Analysis (Python)</h3>
-      <p><strong>Business Problem:</strong> Needed to identify profitable customer segments for festive season targeting.</p>
-      <p><strong>Tools:</strong> Python (Pandas, Seaborn, Matplotlib), Jupyter Notebook</p>
-      <p><strong>Key Insights:</strong></p>
+    <div class="project">
+      <h3>Project 3 – 🎉 Diwali Sales Analysis (Python)</h3>
+      <p><strong>Business Problem:</strong> Needed regional & customer-level festive insights.</p>
+      <p><strong>Tools:</strong> Python (Pandas, Matplotlib), Jupyter</p>
       <ul>
-        <li>Most spending: Age group 26–35</li>
-        <li>Male customers spent more than females</li>
-        <li>Top cities and product categories identified</li>
+        <li>Top spenders: Age 26–35, unmarried</li>
+        <li>💡 Males spent more, cities performed better</li>
       </ul>
-      <p><strong>Outcome:</strong> Recommended targeting strategies for high-value cities and customer types.</p>
-      <p><strong>GitHub:</strong> <a href="https://github.com/sahil-dangi/diwali-sales-analysis" target="_blank">View Project</a></p>
+      <p><strong>Value:</strong> Enabled hyper-targeted festive marketing strategy.</p>
+      <p><a href="https://github.com/sahil-dangi/diwali-sales-analysis" target="_blank">🔗 View on GitHub</a></p>
     </div>
   </div>
-  <!-- End Projects -->
 
   <div class="section">
     <h2>Education</h2>
@@ -155,24 +147,23 @@
     </ul>
   </div>
 
-  <!-- Contact Form -->
   <div class="section">
     <h2>Send a Message</h2>
     <form action="https://formspree.io/f/xldllvvv" method="POST">
       <label>
         Your Name:<br>
         <input type="text" name="name" required>
-      </label><br><br>
+      </label><br>
 
       <label>
         Your Email:<br>
         <input type="email" name="email" required>
-      </label><br><br>
+      </label><br>
 
       <label>
         Your Message:<br>
         <textarea name="message" rows="5" required></textarea>
-      </label><br><br>
+      </label><br>
 
       <button type="submit">Send Message</button>
     </form>
