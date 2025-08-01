@@ -5,31 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sahil Dangi – Data Analyst Portfolio</title>
   <style>
-    :root {
-      --bg-color: #f4f4f4;
-      --text-color: #333;
-      --card-bg: #fff;
-    }
-
-    body.dark {
-      --bg-color: #1c1c1c;
-      --text-color: #eee;
-      --card-bg: #2b2b2b;
-    }
-
     body {
       font-family: 'Segoe UI', Tahoma, sans-serif;
-      background-color: var(--bg-color);
-      color: var(--text-color);
+      background-color: #f4f4f4;
+      color: #333;
       max-width: 950px;
       margin: auto;
       padding: 30px;
       line-height: 1.6;
-      transition: background 0.3s, color 0.3s;
     }
 
     h1, h2, h3, h4 {
-      color: var(--text-color);
+      color: #222;
     }
 
     a {
@@ -38,20 +25,11 @@
     }
 
     .section {
-      background-color: var(--card-bg);
+      background-color: #fff;
       padding: 25px;
       margin-bottom: 30px;
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0,0,0,0.05);
-      transition: background 0.3s;
-    }
-
-    .project {
-      margin-bottom: 40px;
-      padding: 20px;
-      border-radius: 8px;
-      background-color: var(--card-bg);
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
     }
 
     ul {
@@ -62,38 +40,18 @@
       margin-bottom: 8px;
     }
 
-    .toggle-btn {
-      float: right;
-      padding: 8px 14px;
-      background-color: #0077cc;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
+    .project {
+      margin-bottom: 40px;
     }
 
-    .contact-form input,
-    .contact-form textarea {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0 20px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-    }
-
-    .contact-form button {
-      padding: 10px 20px;
-      background-color: #0077cc;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
+    @media (max-width: 600px) {
+      body {
+        padding: 15px;
+      }
     }
   </style>
 </head>
 <body>
-
-  <button class="toggle-btn" onclick="toggleMode()">Toggle Dark Mode</button>
 
   <div class="section">
     <h1>Sahil Dangi</h1>
@@ -109,134 +67,102 @@
     <p>BCA graduate and aspiring data analyst with hands-on experience in SQL, Power BI, Excel, and Python. Skilled in data transformation, visualization, and actionable insight generation. I enjoy solving business problems with clean, structured, and visual data storytelling.</p>
   </div>
 
-  <!-- START PROJECTS -->
   <div class="section">
     <h2>Projects</h2>
 
-    <!-- Project 1 -->
     <div class="project">
-      <h3>Project 1: 💳 Credit Card Transaction Analysis with Power BI & SQL</h3>
+      <h3>📊 Project 1: Credit Card Transaction Analysis (Power BI & SQL)</h3>
 
       <h4>🧩 Business Problem</h4>
-      <p>The business lacked insight into which customers and card types were generating the most revenue, limiting their ability to focus marketing effectively.</p>
+      <p>The business lacked insight into which customers and card types were generating the most revenue.</p>
 
       <h4>🛠 Tools Used</h4>
       <ul>
         <li>SQL – data cleaning, joins, filtering</li>
         <li>Power BI – dashboard, DAX, KPI visuals</li>
-        <li>CSV – customer and credit_card transaction data</li>
+        <li>CSV – customer and transaction data</li>
       </ul>
 
       <h4>📊 Key Insights</h4>
       <ul>
-        <li>💰 Total revenue: ₹55M+</li>
-        <li>🟦 Blue Card holders generated ₹46M</li>
-        <li>👴 Customers aged 60+ contributed ₹14M</li>
-        <li>🧾 Swipe method: ₹35M in revenue</li>
-        <li>🎓 Graduates: ₹22M revenue segment</li>
+        <li>Total revenue: ₹55M+</li>
+        <li>Blue Card holders generated ₹46M</li>
+        <li>Customers aged 60+ contributed ₹14M</li>
+        <li>Swipe method: ₹35M in revenue</li>
+        <li>Graduates: ₹22M segment</li>
       </ul>
 
-      <h4>🎯 Actions</h4>
-      <p>Built a Power BI dashboard to help stakeholders visualize key demographics and usage types. Used SQL to prepare and clean data, categorize transactions, and segment users.</p>
+      <h4>🎯 Actions Taken</h4>
+      <p>Created dashboard and prepared data in SQL for segmentation and analysis.</p>
 
       <h4>💡 Business Value</h4>
-      <p>Helped identify and target high-value customers based on card usage, age, and education, allowing the business to personalize card offerings and marketing.</p>
-
-      <h4>📘 What I Learned</h4>
-      <p>Joining and analyzing multi-table data, visual storytelling with KPIs, and using slicers to drive interactivity in dashboards.</p>
-
-      <h4>▶️ How to Use</h4>
-      <ul>
-        <li>Open <code>Credit Card Transaction Report.pbix</code> in Power BI Desktop</li>
-        <li>Use slicers to explore segments by card, age, and profession</li>
-      </ul>
+      <p>Enabled the business to personalize offerings based on customer value and behavior.</p>
 
       <p><a href="https://github.com/sahil-dangi/credit-card-data-analysis" target="_blank">🔗 View Project on GitHub</a></p>
     </div>
 
-    <!-- Project 2 -->
     <div class="project">
-      <h3>Project 2: 🛍️ Marketing Analytics Dashboard – ShopEasy</h3>
+      <h3>📈 Project 2: Marketing Analytics Dashboard – ShopEasy</h3>
 
       <h4>🧩 Business Problem</h4>
-      <p>ShopEasy faced falling conversion rates, reduced engagement, and unclear customer sentiment, despite running several marketing campaigns with a high budget.</p>
+      <p>Falling conversion rates and unclear customer sentiment despite high campaign spending.</p>
 
       <h4>🛠 Tools Used</h4>
       <ul>
-        <li>SQL – data modeling, joins, data cleaning</li>
-        <li>Python – sentiment analysis using VADER</li>
-        <li>Power BI – visualization, trend analysis</li>
+        <li>SQL – data modeling, joins, cleaning</li>
+        <li>Python – sentiment analysis with VADER</li>
+        <li>Power BI – visualization and KPIs</li>
       </ul>
 
       <h4>📊 Key Insights</h4>
       <ul>
         <li>Best conversion: January (18.5%)</li>
-        <li>Top products: Kayaks, Ski Boots, Gloves</li>
-        <li>Avg. review rating: 3.7 (below target)</li>
-        <li>Sentiment: 275 positive, 82 negative reviews</li>
+        <li>Avg. review rating: 3.7</li>
+        <li>Sentiment: 275 positive, 82 negative</li>
       </ul>
 
-      <h4>🎯 Actions</h4>
-      <p>Recommended product-focused promotions, rebuilt campaign timing based on peak periods, and proposed changes to content strategy based on engagement decline.</p>
+      <h4>🎯 Actions Taken</h4>
+      <p>Recommended content strategy changes and budget reallocation based on insights.</p>
 
       <h4>💡 Business Value</h4>
-      <p>Helped the business reduce ad spend waste, improve targeting, and address customer concerns in real-time.</p>
-
-      <h4>📘 What I Learned</h4>
-      <p>End-to-end analytics with Python and Power BI; using sentiment to add context to metrics; dashboard storytelling over a multi-year timeline.</p>
-
-      <h4>▶️ How to Use</h4>
-      <ul>
-        <li>Open <code>Marketing_Analytics_Dashboard.pbix</code> in Power BI</li>
-        <li>Use filters to explore trends over time and by content type</li>
-      </ul>
+      <p>Improved ad targeting and reduced wasted spend on low-performing campaigns.</p>
 
       <p><a href="https://github.com/sahil-dangi/marketing-analytics-dashboard" target="_blank">🔗 View Project on GitHub</a></p>
     </div>
 
-    <!-- Project 3 -->
     <div class="project">
-      <h3>Project 3: 🎉 Diwali Sales Analysis (Python)</h3>
+      <h3>🎉 Project 3: Diwali Sales Analysis (Python)</h3>
 
       <h4>🧩 Business Problem</h4>
-      <p>The company needed to identify high-value regions and customer segments to improve festive sales outcomes and design more personalized promotions.</p>
+      <p>Need to understand regional demand and improve Diwali marketing strategy.</p>
 
       <h4>🛠 Tools Used</h4>
       <ul>
-        <li>Python – Pandas, Seaborn, Matplotlib, NumPy</li>
-        <li>Jupyter Notebook – EDA and insights presentation</li>
+        <li>Python – Pandas, Seaborn, Matplotlib</li>
+        <li>Jupyter Notebook – EDA and visualization</li>
       </ul>
 
       <h4>📊 Key Insights</h4>
       <ul>
         <li>Top customers: Age 26–35, unmarried</li>
-        <li>Male customers spent more on average</li>
-        <li>High-performing regions and products identified</li>
+        <li>Male customers spent more</li>
+        <li>Identified high-potential regions</li>
       </ul>
 
-      <h4>🎯 Actions</h4>
-      <p>Recommended combo deals, female-focused campaigns, and increased investment in mid-tier cities based on regional trends.</p>
+      <h4>🎯 Actions Taken</h4>
+      <p>Suggested combo deals and female-focused promotions for upcoming campaigns.</p>
 
       <h4>💡 Business Value</h4>
-      <p>Gave the business a clear roadmap to improve ROI on seasonal campaigns through data-backed marketing strategies.</p>
-
-      <h4>📘 What I Learned</h4>
-      <p>Working with raw sales data, customer segmentation using Python, and aligning insights with business goals.</p>
-
-      <h4>▶️ How to Use</h4>
-      <ul>
-        <li>Open <code>Diwali_Sales_Analysis.ipynb</code> in Jupyter Notebook</li>
-        <li>Run all cells to view data cleaning, charts, and conclusions</li>
-      </ul>
+      <p>Better targeting and improved campaign ROI during festive periods.</p>
 
       <p><a href="https://github.com/sahil-dangi/diwali-sales-analysis" target="_blank">🔗 View Project on GitHub</a></p>
     </div>
+
   </div>
-  <!-- END PROJECTS -->
 
   <div class="section">
     <h2>Education</h2>
-    <p><strong>BCA – Bachelor of Computer Applications</strong><br>
+    <p><strong>Bachelor of Computer Applications (BCA)</strong><br>
     Himalayan Garhwal University, Uttarakhand (2021–2024)</p>
   </div>
 
@@ -259,33 +185,6 @@
       <li>Team Collaboration & Communication</li>
     </ul>
   </div>
-
-  <div class="section">
-    <h2>Contact Me</h2>
-    <form class="contact-form" id="contactForm">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </div>
-
-  <script>
-    function toggleMode() {
-      document.body.classList.toggle("dark");
-    }
-
-    document.addEventListener("DOMContentLoaded", function () {
-      const form = document.getElementById("contactForm");
-      if (form) {
-        form.addEventListener("submit", function (e) {
-          e.preventDefault();
-          alert("Thanks! Your message has been sent.");
-          form.reset();
-        });
-      }
-    });
-  </script>
 
 </body>
 </html>
