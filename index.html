@@ -14,7 +14,7 @@
       padding: 30px;
       line-height: 1.6;
     }
-    h1, h2, h3 {
+    h1, h2, h3, h4 {
       color: #222;
     }
     a {
@@ -63,74 +63,131 @@
     <p>BCA graduate and aspiring data analyst with hands-on experience in SQL, Power BI, Excel, and Python. Skilled in data transformation, visualization, and actionable insight generation. I enjoy solving business problems with clean, structured, and visual data storytelling.</p>
   </div>
 
-  <div class="section project">
-    <h2>💳 Credit Card Transaction Analysis</h2>
-    <p><strong>Tools:</strong> SQL, Power BI, CSV, DAX</p>
-    <p>This project analyzes credit card transaction behavior using SQL for data transformation and Power BI for interactive dashboards. It segments customers by age, education, profession, and card usage to uncover patterns in ₹55M+ of spending.</p>
+  <!-- START PROJECTS -->
+  <div class="section">
+    <h2>Projects</h2>
 
-    <ul>
-      <li>💰 Blue Card generated ₹46M in revenue</li>
-      <li>👥 Customers aged 60+ spent ₹14M</li>
-      <li>🎓 Graduates drove ₹22M in spending</li>
-      <li>🧾 Swipe usage dominated: ₹35M</li>
-      <li>🌍 Top revenue states: CA, NY, TX</li>
-    </ul>
+    <!-- Credit Card Transaction -->
+    <div class="project">
+      <h3>💳 Credit Card Transaction Analysis with Power BI & SQL</h3>
 
-    <p><strong>Business Value:</strong> Helped tailor acquisition strategies, identify top-performing customer groups, and refine card offerings.</p>
+      <h4>🧩 Business Problem</h4>
+      <p>The business lacked insight into which customers and card types were generating the most revenue, limiting their ability to focus marketing effectively.</p>
 
-    <p><strong>What I Learned:</strong> SQL joins, data modeling, dashboard design, KPI tracking, segmentation, and storytelling.</p>
+      <h4>🛠 Tools Used</h4>
+      <ul>
+        <li>SQL – data cleaning, joins, filtering</li>
+        <li>Power BI – dashboard, DAX, KPI visuals</li>
+        <li>CSV – customer and credit_card transaction data</li>
+      </ul>
 
-    <p><a href="https://github.com/sahil-dangi/credit-card-data-analysis" target="_blank">🔗 View Project on GitHub</a></p>
-    <img src="credit-card-dashboard.png" alt="Credit Card Power BI Dashboard">
+      <h4>📊 Key Insights</h4>
+      <ul>
+        <li>💰 Total revenue: ₹55M+</li>
+        <li>🟦 Blue Card holders generated ₹46M</li>
+        <li>👴 Customers aged 60+ contributed ₹14M</li>
+        <li>🧾 Swipe method: ₹35M in revenue</li>
+        <li>🎓 Graduates: ₹22M revenue segment</li>
+      </ul>
+
+      <h4>🎯 Actions</h4>
+      <p>Built a Power BI dashboard to help stakeholders visualize key demographics and usage types. Used SQL to prepare and clean data, categorize transactions, and segment users.</p>
+
+      <h4>💡 Business Value</h4>
+      <p>Helped identify and target high-value customers based on card usage, age, and education, allowing the business to personalize card offerings and marketing.</p>
+
+      <h4>📘 What I Learned</h4>
+      <p>Joining and analyzing multi-table data, visual storytelling with KPIs, and using slicers to drive interactivity in dashboards.</p>
+
+      <h4>▶️ How to Use</h4>
+      <ul>
+        <li>Open <code>Credit Card Transaction Report.pbix</code> in Power BI Desktop</li>
+        <li>Use slicers to explore segments by card, age, and profession</li>
+      </ul>
+
+      <p><a href="https://github.com/sahil-dangi/credit-card-data-analysis" target="_blank">🔗 View Project on GitHub</a></p>
+      <img src="credit-card-dashboard.png" alt="Credit Card Dashboard" />
+    </div>
+
+    <!-- Marketing Analytics -->
+    <div class="project">
+      <h3>🛍️ Marketing Analytics Dashboard – ShopEasy</h3>
+
+      <h4>🧩 Business Problem</h4>
+      <p>ShopEasy faced falling conversion rates, reduced engagement, and unclear customer sentiment, despite running several marketing campaigns with a high budget.</p>
+
+      <h4>🛠 Tools Used</h4>
+      <ul>
+        <li>SQL – data modeling, joins, data cleaning</li>
+        <li>Python – sentiment analysis using VADER</li>
+        <li>Power BI – visualization, trend analysis</li>
+      </ul>
+
+      <h4>📊 Key Insights</h4>
+      <ul>
+        <li>Best conversion: January (18.5%)</li>
+        <li>Top products: Kayaks, Ski Boots, Gloves</li>
+        <li>Avg. review rating: 3.7 (below target)</li>
+        <li>Sentiment: 275 positive, 82 negative reviews</li>
+      </ul>
+
+      <h4>🎯 Actions</h4>
+      <p>Recommended product-focused promotions, rebuilt campaign timing based on peak periods, and proposed changes to content strategy based on engagement decline.</p>
+
+      <h4>💡 Business Value</h4>
+      <p>Helped the business reduce ad spend waste, improve targeting, and address customer concerns in real-time.</p>
+
+      <h4>📘 What I Learned</h4>
+      <p>End-to-end analytics with Python and Power BI; using sentiment to add context to metrics; dashboard storytelling over a multi-year timeline.</p>
+
+      <h4>▶️ How to Use</h4>
+      <ul>
+        <li>Open <code>Marketing_Analytics_Dashboard.pbix</code> in Power BI</li>
+        <li>Use filters to explore trends over time and by content type</li>
+      </ul>
+
+      <p><a href="https://github.com/sahil-dangi/marketing-analytics-dashboard" target="_blank">🔗 View Project on GitHub</a></p>
+    </div>
+
+    <!-- Diwali Sales -->
+    <div class="project">
+      <h3>🎉 Diwali Sales Analysis (Python)</h3>
+
+      <h4>🧩 Business Problem</h4>
+      <p>The company needed to identify high-value regions and customer segments to improve festive sales outcomes and design more personalized promotions.</p>
+
+      <h4>🛠 Tools Used</h4>
+      <ul>
+        <li>Python – Pandas, Seaborn, Matplotlib, NumPy</li>
+        <li>Jupyter Notebook – EDA and insights presentation</li>
+      </ul>
+
+      <h4>📊 Key Insights</h4>
+      <ul>
+        <li>Top customers: Age 26–35, unmarried</li>
+        <li>Male customers spent more on average</li>
+        <li>High-performing regions and products identified</li>
+      </ul>
+
+      <h4>🎯 Actions</h4>
+      <p>Recommended combo deals, female-focused campaigns, and increased investment in mid-tier cities based on regional trends.</p>
+
+      <h4>💡 Business Value</h4>
+      <p>Gave the business a clear roadmap to improve ROI on seasonal campaigns through data-backed marketing strategies.</p>
+
+      <h4>📘 What I Learned</h4>
+      <p>Working with raw sales data, customer segmentation using Python, and aligning insights with business goals.</p>
+
+      <h4>▶️ How to Use</h4>
+      <ul>
+        <li>Open <code>Diwali_Sales_Analysis.ipynb</code> in Jupyter Notebook</li>
+        <li>Run all cells to view data cleaning, charts, and conclusions</li>
+      </ul>
+
+      <p><a href="https://github.com/sahil-dangi/diwali-sales-analysis" target="_blank">🔗 View Project on GitHub</a></p>
+    </div>
   </div>
-
-  <div class="section project">
-    <h2>🛍️ Marketing Analytics Dashboard – ShopEasy</h2>
-    <p><strong>Tools:</strong> Power BI, SQL, Python (VADER), DAX, Sentiment Analysis</p>
-    <p>ShopEasy, an online retailer, was facing declining conversion rates and unclear marketing ROI. This project analyzed campaign performance, customer engagement, and reviews from 2023–2025 using SQL, sentiment analysis, and Power BI.</p>
-
-    <h3>📊 Dashboard Highlights</h3>
-    <ul>
-      <li>🔄 Best conversion in Jan (18.5%) – Kayaks & Ski Boots</li>
-      <li>📉 Drop in views from August onward</li>
-      <li>🌟 Average rating: 3.7 (below 4.0 target)</li>
-      <li>🧠 275 positive, 82 negative sentiments detected via Python VADER</li>
-    </ul>
-
-    <h3>🎯 Business Goals</h3>
-    <ul>
-      <li>Boost conversions via product and time-based promotions</li>
-      <li>Improve engagement by revamping content strategy</li>
-      <li>Analyze and act on mixed/negative reviews to lift satisfaction</li>
-    </ul>
-
-    <p><strong>Data Engineering:</strong> Used SQL for data joining, cleaning, bucketing, and deduplication. Python handled sentiment tagging before feeding results into Power BI.</p>
-
-    <p><a href="https://github.com/sahil-dangi/marketing-analytics-dashboard" target="_blank">🔗 View Project on GitHub</a></p>
-  </div>
-
-  <div class="section project">
-    <h2>🎉 Diwali Sales Analysis (Python)</h2>
-    <p><strong>Tools:</strong> Python (Pandas, Seaborn, Matplotlib), Jupyter Notebook</p>
-    <p>This project explored Diwali season customer behavior, product sales, and region-wise trends to boost seasonal ROI. The analysis supports business decisions through segmentation by age, gender, marital status, and geography.</p>
-
-    <h3>🔍 Key Insights</h3>
-    <ul>
-      <li>🏙️ Top cities and product categories identified</li>
-      <li>🧑‍🤝‍🧑 26–35-year-old unmarried customers were top spenders</li>
-      <li>👩 Female engagement was lower – suggested promo bundles</li>
-      <li>📦 Combo offers for high + slow-moving products to increase cart value</li>
-    </ul>
-
-    <h3>📘 What I Learned</h3>
-    <ul>
-      <li>Data wrangling with Pandas & NumPy</li>
-      <li>Visual storytelling using Matplotlib & Seaborn</li>
-      <li>Business application of EDA in real-world festive sales</li>
-    </ul>
-
-    <p><a href="https://github.com/sahil-dangi/diwali-sales-analysis" target="_blank">🔗 View Project on GitHub</a></p>
-  </div>
+  <!-- END PROJECTS -->
 
   <div class="section">
     <h2>Education</h2>
